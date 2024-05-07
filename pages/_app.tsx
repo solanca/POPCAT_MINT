@@ -33,9 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:title" content={headerText} />
         <meta
           property="og:description"
-          content="Website is based on Sparqxi work"
+          content="Website is popcat NFT mint site"
         />
-        <meta name="description" content="Website is based on Sparqxi work" />
+        <meta name="description" content="Website is Popcat NFT mint site" />
 
         <meta
           property="og:image"
