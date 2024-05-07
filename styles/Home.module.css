@@ -1,6 +1,6 @@
 .wallet { 
   display: flex;
-  padding: 3rem;
+  padding: 1.5rem;
   flex-direction: row-reverse;
 }
 
