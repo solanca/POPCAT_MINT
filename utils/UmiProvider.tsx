@@ -14,6 +14,7 @@ export const UmiProvider = ({
   endpoint: string;
   children: ReactNode;
 }) => {
+  console.log("endpoint==",endpoint)
   const wallet = useWallet();
   const umi = createUmi(endpoint)
   .use(mplTokenMetadata())
