@@ -118,6 +118,7 @@ const useCandyMachine = (
 
 export default function Home() {
   const umi = useUmi();
+  console.log("umi==",umi)
   const solanaTime = useSolanaTime();
   const toast = useToast();
   const { isOpen: isShowNftOpen, onOpen: onShowNftOpen, onClose: onShowNftClose } = useDisclosure();

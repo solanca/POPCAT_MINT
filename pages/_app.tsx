@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
   if (process.env.NEXT_PUBLIC_ENVIRONMENT === "mainnet-beta" || process.env.NEXT_PUBLIC_ENVIRONMENT === "mainnet") {
     network = WalletAdapterNetwork.Mainnet;
   }
+  console.log("network==",network)
   let endpoint = "https://api.devnet.solana.com";
   if (process.env.NEXT_PUBLIC_RPC) {
     endpoint = process.env.NEXT_PUBLIC_RPC;
