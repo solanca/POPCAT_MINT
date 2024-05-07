@@ -217,11 +217,11 @@ export default function Home() {
        }
    `}
         </style>
-        <Card sx={{bgColor:"#FFFAE5"}}>
+        <Card sx={{background:"rgba(210,236,246,0.4)",backdropFilter:"blur(10px)"}}>
           <CardHeader my={4}>
             {/* <Flex minWidth='max-content' alignItems='center' gap='2'>
               <Box> */}
-                <Heading size='md'>{headerText}</Heading>
+                {/* <Heading size='md'>{headerText}</Heading> */}
               {/* </Box>
               
             </Flex> */}
@@ -231,11 +231,11 @@ export default function Home() {
             <Center>
               <Box
                 rounded={'lg'}
-                mt={-12}
+                mt={-14}
                 pos={'relative'}>
                 <Image
                   rounded={'lg'}
-                  height={230}
+                  height={350}
                   objectFit={'cover'}
                   alt={"project Image"}
                   src={image}
