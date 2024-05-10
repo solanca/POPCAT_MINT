@@ -118,7 +118,6 @@ const useCandyMachine = (
 
 export default function Home() {
   const umi = useUmi();
-  console.log("umi==",umi)
   const solanaTime = useSolanaTime();
   const toast = useToast();
   const { isOpen: isShowNftOpen, onOpen: onShowNftOpen, onClose: onShowNftClose } = useDisclosure();
@@ -208,7 +207,7 @@ export default function Home() {
         <style jsx global>
           {`
       body {
-          background-image:url(/pop_cats_bg.webp); 
+          background-image:url(/pop_cats_bg_1.webp); 
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
