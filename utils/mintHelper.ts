@@ -349,6 +349,7 @@ export const buildTx = (
   units: number,
   buyBeer: boolean
 ) => {
+  console.log("mint==",mintArgs);
   let tx = transactionBuilder().add(
     mintV2(umi, {
       candyMachine: candyMachine.publicKey,

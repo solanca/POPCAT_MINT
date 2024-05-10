@@ -8,7 +8,7 @@ export const mintText = [
 ];
 
 //header image in the ui. replace with your own
-export const image = "/unnamed.png";
+export const image = "/22.gif";
 
 //website title
 export const headerText = "PopCat mint ";

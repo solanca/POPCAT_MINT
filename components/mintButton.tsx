@@ -631,7 +631,7 @@ console.log("guardlist===",guardList);
                   ?.loadingText
               }
             >
-             <img src={"/solana-sol-logo.svg"} alt={""} width={10} style={{marginRight:"10px"}}/>{buttonGuard.price  } SOL    {buttonGuard.buttonLabel}
+             <img src={"/solana-sol-logo.svg"} alt={""} width={10} style={{marginRight:"10px"}}/>{buttonGuard.price  }    {buttonGuard.buttonLabel}
             </Button>
           </Tooltip>
         </Flex>

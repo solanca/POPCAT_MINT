@@ -10,6 +10,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 import { ChakraProvider } from '@chakra-ui/react'
 import { image, headerText } from 'settings'
 import { SolanaTimeProvider } from "@/utils/SolanaTimeContext";
+import { UnsafeBurnerWalletAdapter } from "@solana/wallet-adapter-wallets";
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -24,8 +25,9 @@ export default function App({ Component, pageProps }: AppProps) {
   }
   const wallets = useMemo(
     () => [
+      new UnsafeBurnerWalletAdapter()
     ],
-    []
+    [network]
   );
   return (
     <>
@@ -47,7 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ChakraProvider>
-        <WalletProvider wallets={wallets}>
+        <WalletProvider wallets={wallets} autoConnect>
           <UmiProvider endpoint={endpoint}>
             <WalletModalProvider>
               <SolanaTimeProvider>
